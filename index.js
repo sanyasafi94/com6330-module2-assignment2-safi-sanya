@@ -4,7 +4,18 @@ function greet() {
   if (personName) {
     alert("Hello, " + personName);
 
-    const ageString = prompt("How old are you?");
-    const age = parseInt(ageString);
+    var ageString = prompt("How old are you?");
+    var age = parseInt(ageString);
+
+    var personBday = confirm("Have you had your birthday this year?");
+    var currentYear = new Date().getFullYear();
+
+    let birthYear;
+    if (personBday) {
+      birthYear = currentYear - age;
+    } else {
+      birthYear = currentYear - age - 1;
+    }
+    alert("You were born in " + birthYear);
   }
 }
