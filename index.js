@@ -6,4 +6,9 @@ function greet() {
   }
 }
 
-function age() {}
+function age(ageNum) {
+  const age = parseInt(ageNum);
+  if (ageNum) {
+    return "Age: " + ageNum;
+  }
+}
