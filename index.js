@@ -4,11 +4,10 @@ function greet() {
   if (personName) {
     alert("Hello, " + personName);
   }
-}
 
-function age(ageNum) {
-  const age = parseInt(ageNum);
-  if (ageNum) {
-    return "Age: " + ageNum;
+  function personAge() {
+    const ageString = prompt("How old are you?");
+
+    const age = parseInt(ageString);
   }
 }
